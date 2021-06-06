@@ -6,6 +6,9 @@
   },
   "scripts": {
     "test": "lerna run test",
+    "test-one": "lerna run test --scope=@walnut/common",
+    "test-some": "lerna run test --scope={@walnut/common,@walnut/server}",
+    "test-latest": "lerna run test --since",
     "new-versions": "lerna version --conventional-commits --yes",
     "diff": "lerna diff"
   }
